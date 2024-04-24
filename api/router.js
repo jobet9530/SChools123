@@ -6,6 +6,7 @@ const authen = require('./controllers/LoginController.js')
 const userAccount = require('./controllers/UserAccountController.js')
 
 module.exports = express.Router()
+   util.log('LoginController'),  
   .post('/login', authen.login)
   .get('/logout', authen.logout)
   .post('/resetPassword', authen.resetPassword)
