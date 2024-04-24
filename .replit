@@ -1,0 +1,10 @@
+entrypoint = "server.ts"
+run = "npm run start"
+modules = ["angular-node-20:v2-20240124-02d14a4"]
+
+[nix]
+channel = "stable-23_11"
+
+[[ports]]
+localPort = 4200
+externalPort = 80
